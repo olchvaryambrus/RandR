@@ -6,7 +6,6 @@ import { AppComponent } from './app.component';
 import { CountryService } from './service/country.service';
 import { HttpClientModule } from '@angular/common/http';
 import { CountryListComponent } from './country-list/country-list.component';
-import { SearchComponent } from './search/search.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CountryDetailsComponent } from './country-details/country-details.component';
@@ -15,7 +14,6 @@ import { CountryDetailsComponent } from './country-details/country-details.compo
   declarations: [
     AppComponent,
     CountryListComponent,
-    SearchComponent,
     CountryDetailsComponent,
     CountryDetailsComponent
   ],

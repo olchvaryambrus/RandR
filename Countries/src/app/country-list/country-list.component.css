@@ -2,3 +2,18 @@
     text-align: center;
     margin-bottom: 20px;
 }
+
+#search-box{
+    width: 800px;
+    margin-top: 50px;
+    border-radius: 15px;
+}
+
+.center {
+    margin: auto;
+    padding: 10px;
+  }
+
+  .input-withicons{
+    position: absolute; 
+  }

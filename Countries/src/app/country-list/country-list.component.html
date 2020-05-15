@@ -1,6 +1,10 @@
 <div class="container">
     <div class="row">
-        <div *ngFor="let country of countries" class="card my-5 mx-4 text-white bg-dark" style="width: 20rem;">
+        <input type="text" id="search-box" class="center" [(ngModel)]="searchTerms" (keyup.backspace)="search()"
+            (input)="search()" placeholder="Search by Country code..." style="padding-left: 25px;" />
+    </div>
+    <div class="row">
+        <div *ngFor="let country of selectedCountries" class="card my-5 mx-4 text-white bg-dark" style="width: 20rem;">
             <a routerLink="/countries/{{country.alpha3Code}}/details" style="color: white;">
                 <img src={{country.flag}} class="card-img-top" alt="..." sizes="300px">
                 <div class="card-body">
