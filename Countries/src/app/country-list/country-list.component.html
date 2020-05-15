@@ -1,0 +1,26 @@
+<div class="container">
+    <div class="row">
+        <input type="text" id="search-box" class="center" [(ngModel)]="searchTerms" (keyup.backspace)="search()"
+            (input)="search()" placeholder="Search by Country code..." />
+        <div class="selection">
+            <select class="custom-select form-control validate" id="inputGroupSelect01" [(ngModel)]="selectedRegion"
+                (ngModelChange)="search()">
+                <option selected>Region filter...</option>
+                <option *ngFor="let region of regions">{{region}}</option>
+            </select>
+        </div>
+    </div>
+    <div class="row">
+        <div *ngFor="let country of selectedCountries" class="card my-5 mx-4 text-white bg-dark" id="mycard">
+            <a routerLink="/countries/{{country.alpha3Code}}/details" id="link">
+                <img src={{country.flag}} class="card-img-top" alt="..." id="myimage">
+                <div class="card-body">
+                    <h3 class="card-title">{{country.name}}</h3>
+                    <p class="card-text">Capital: {{country.capital}}</p>
+                    <p class="card-text">Population: {{country.population}}</p>
+                    <p class="card-text">Country code: {{country.alpha3Code}}</p>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>

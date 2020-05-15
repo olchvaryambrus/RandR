@@ -1,0 +1,8 @@
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+@import url( 'https://fonts.googleapis.com/css?family=Roboto:400,700|Material+Icons');
+
+body{ 
+    background-image:url("assets/background-earth.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+  }

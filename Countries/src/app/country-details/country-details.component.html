@@ -1,0 +1,44 @@
+<div class="card mb-3 center text-white bg-dark">
+    <i class="fa fa-arrow-circle-left" (click)="goBack()" title="Go back"></i>
+    <img class="image" src={{country.flag}} alt="...">
+    <div class="card-body">
+        <h2 class="card-title">{{country.name | uppercase}}</h2>
+
+        <table class="table table-striped center">
+            <tbody>
+                <tr>
+                    <th>Native name:</th>
+                    <td>{{country.nativeName}}</td>
+                </tr>
+                <tr>
+                    <th>Country code:</th>
+                    <td>{{country.alpha3Code}}</td>
+                </tr>
+                <tr>
+                    <th>Capital:</th>
+                    <td>{{country.capital}}</td>
+                </tr>
+                <tr>
+                    <th>Region:</th>
+                    <td>{{country.region}}</td>
+                </tr>
+                <tr>
+                    <th>Population:</th>
+                    <td>{{country.population}}</td>
+                </tr>
+                <tr>
+                    <th>Languages:</th>
+                    <div *ngFor="let language of country.languages">
+                        <td>{{language.name}}</td>
+                    </div>
+                </tr>
+                <tr>
+                    <th>Borders:</th>
+                    <div *ngFor="let border of country.borders">
+                        <td>{{border}}</td>
+                    </div>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

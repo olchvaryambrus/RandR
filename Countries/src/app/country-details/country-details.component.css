@@ -1,0 +1,31 @@
+.center {
+  margin: auto;
+  padding: 10px;
+   text-align: center;
+}
+
+.card{
+  width: 600px;
+  margin-top: 50px;
+  min-width: 600px;      
+  border-radius: 30px;
+}
+
+.card-title{
+  margin-bottom: 40px;
+}
+
+.fa-arrow-circle-left{
+  margin-bottom: 5px;
+  color: whitesmoke;
+  font-size:25px;
+  text-align: left;
+}
+
+.fa-arrow-circle-left::before{
+  cursor: pointer;
+}
+
+.image{
+  max-width: 600px;
+}
