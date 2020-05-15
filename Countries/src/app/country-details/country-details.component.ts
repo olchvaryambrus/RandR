@@ -9,6 +9,15 @@ import { Location } from '@angular/common';
   templateUrl: './country-details.component.html',
   styleUrls: ['./country-details.component.css']
 })
+
+//------------------------------------------------------------------------------------------------------------------------------------//
+
+// Ez a komponens felel kiválasztott ország adatainak részletesebb megjelenítéséért, ország kód alapján kérem le az
+// adatokat egyszerű get kéréssel
+
+//------------------------------------------------------------------------------------------------------------------------------------//
+
+
 export class CountryDetailsComponent implements OnInit {
 
   @Input() country: Country;

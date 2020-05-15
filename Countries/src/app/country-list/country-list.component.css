@@ -7,13 +7,29 @@
     width: 800px;
     margin-top: 50px;
     border-radius: 15px;
+    padding-left: 25px;
 }
 
 .center {
     margin: auto;
     padding: 10px;
-  }
+}
 
-  .input-withicons{
-    position: absolute; 
-  }
+#inputGroupSelect01{
+    margin-top: 53px;
+    height: 43px;
+}
+
+#mycard{
+      width: 20rem;
+    }
+
+#link{
+      color: white;
+}
+
+#myimage{
+    max-width:100%;
+    height:auto;
+}
+  

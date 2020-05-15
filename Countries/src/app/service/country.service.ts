@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Country } from '../model/country';
 import { Observable, of } from 'rxjs';
-import { catchError, map, tap } from 'rxjs/operators';
+import { catchError} from 'rxjs/operators';
 
 @Injectable({
   providedIn: 'root'
@@ -26,7 +26,6 @@ export class CountryService {
 
   public searchCountryByAlpha3Code(term: string): Observable<Country> {
     if (!term.trim()) {
-      // if not search term, return empty hero array.
       return of();
     }
     return this.http.get<Country>(`${this.basicUrl}/alpha/${term}`).pipe(
@@ -42,11 +41,7 @@ export class CountryService {
    */
   private handleError<T>(operation = 'operation', result?: T) {
     return (error: any): Observable<T> => {
-
-      // TODO: send the error to remote logging infrastructure
-      console.error(error); // log to console instead
-
-      // Let the app keep running by returning an empty result.
+      console.error(error);
       return of(result as T);
     };
   }
