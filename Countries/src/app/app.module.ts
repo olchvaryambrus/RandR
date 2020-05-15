@@ -3,16 +3,21 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { CountryService } from './service/country.service';
+import { HttpClientModule } from '@angular/common/http';
+import { CountryListComponent } from './country-list/country-list.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CountryListComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [CountryService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

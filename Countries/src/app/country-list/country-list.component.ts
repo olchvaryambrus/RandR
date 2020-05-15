@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { CountryService } from '../service/country.service';
+import { Country } from '../model/country';
 
 @Component({
   selector: 'app-country-list',
@@ -7,9 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CountryListComponent implements OnInit {
 
-  constructor() { }
+  countries: Country[];
+
+  constructor(private countryService: CountryService) { }
 
   ngOnInit(): void {
+    this.countryService.getAll().subscribe(data => {
+      this.countries = data;
+    });
   }
 
 }
