@@ -1,7 +1,7 @@
 <div class="container">
     <div class="row">
         <div *ngFor="let country of countries" class="card my-5 mx-4 text-white bg-dark" style="width: 20rem;">
-            <a routerLink="" style="color: white;">
+            <a routerLink="/countries/{{country.alpha3Code}}/details" style="color: white;">
                 <img src={{country.flag}} class="card-img-top" alt="..." sizes="300px">
                 <div class="card-body">
                     <h3 class="card-title">{{country.name}}</h3>

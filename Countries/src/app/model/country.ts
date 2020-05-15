@@ -6,5 +6,6 @@ export class Country {
     region: string;
     population: number;
     borders: string[];
+    languages: {name: string;};
     flag: string;
 }

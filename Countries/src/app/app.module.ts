@@ -16,6 +16,7 @@ import { CountryDetailsComponent } from './country-details/country-details.compo
     AppComponent,
     CountryListComponent,
     SearchComponent,
+    CountryDetailsComponent,
     CountryDetailsComponent
   ],
   imports: [

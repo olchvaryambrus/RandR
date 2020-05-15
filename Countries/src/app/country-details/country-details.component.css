@@ -1,0 +1,125 @@
+
+  input {
+    height: 2em;
+    font-size: 1em;
+    padding-left: .4em;
+  }
+  button {
+    margin-top: 20px;
+    font-family: Arial;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    cursor: hand;
+  }
+  button:hover {
+    background-color: rgb(114, 114, 114);
+  }
+  button:disabled {
+    background-color: #eee;
+    color: #ccc;
+    cursor: auto;
+  }
+
+
+  .center {
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+  }
+
+  button{
+    margin-right: 10px;
+  }
+
+  .card{
+      width: 600px;
+      margin-top: 50px;
+      min-width: 600px;
+  }
+
+  table {
+    color: white;
+    text-align: left;
+    margin-top: 30px;
+    margin-left: 15px;
+  }
+
+  td{
+      width: fit-content;
+  }
+
+  button{
+    margin-right: 10px;
+  }
+
+  .btn-danger{
+    background-color: rgb(223, 0, 0);
+  }
+
+  .btn-danger:hover {
+    background-color: rgb(185, 0, 0);
+  }
+
+  .delete{
+    margin-bottom: 40px;
+  }
+
+  .btn-info{
+    background-color: #17a2b8;
+  }
+
+  .fa-arrow-circle-left{
+    margin-bottom: 5px;
+    color: whitesmoke;
+    font-size:25px;
+    text-align: left;
+  }
+
+  .fa-arrow-circle-left::before{
+      cursor: pointer;
+  }
+
+  .card{
+    border-radius: 30px;
+  }
+
+  .md-form{
+    margin-left: 20px;
+  }
+
+  .pb-cmnt-textarea {
+    resize: none;
+    padding: 20px;
+    height: 130px;
+    width: 100%;
+    border: 1px solid #F2F2F2;
+}
+
+.form-inline{
+  margin-bottom: 30px;
+}
+
+.container{
+  margin-top: 30px;
+}
+
+.text-center{
+  margin-bottom: 30px;
+}
+
+.list-group-item-text{
+  text-align: left;
+  color: rgb(53, 58, 64);
+  text-shadow: black;
+}
+
+.list-group-item-heading{
+  background-color: rgb(53, 58, 64);
+  color: white;
+}
+
+.image{
+    size: 300px;
+}

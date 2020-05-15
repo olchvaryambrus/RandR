@@ -1,1 +1,42 @@
-<p>country-details works!</p>
+<div class="card mb-3 center text-white bg-dark">
+    <i class="fa fa-arrow-circle-left" (click)="goBack()" title="Go back"></i>
+    <img class="image" src={{country.flag}} alt="..." style="max-width: 600px;">
+    <div class="card-body">
+        <h5 class="card-title">{{country.name | uppercase}}</h5>
+
+        <table class="table table-borderless">
+            <tbody>
+                <tr>
+                    <th>Native name:</th>
+                    <td>{{country.nativeName}}</td>
+                </tr>
+                <tr>
+                    <th>Country code:</th>
+                    <td>{{country.alpha3Code}}</td>
+                </tr>
+                <tr>
+                    <th>Capital:</th>
+                    <td>{{country.capital}}</td>
+                </tr>
+                <tr>
+                    <th>Region:</th>
+                    <td>{{country.region}}</td>
+                </tr>
+                <tr>
+                    <th>Population:</th>
+                    <td>{{country.population}}</td>
+                </tr>
+                <tr>
+                    <th>Languages:</th>
+                    <td *ngFor="let language of country.languages">{{language.name}}</td>
+                </tr>
+                <tr>
+                    <th>Borders:</th>
+                    <td *ngFor="let border of country.borders">{{border}}</td>
+                </tr>
+            </tbody>
+        </table>
+
+
+    </div>
+</div>
